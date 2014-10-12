@@ -1,0 +1,13 @@
+<div ng-conrtoller='HomeCtrl'>
+	<div>
+		<button type="button" class="btn btn-default btn-lg" ng-click="setLayout('grid')" ng-class="{active: isLayout('grid')}">Grid</button>
+		<button type="button" class="btn btn-default btn-lg" ng-click="setLayout('list')" ng-class='{active: isLayout('list')}'>List</button>
+		<br>
+		<button type="button" class="btn btn-default btn-lg" ng-click="refresh()">Refresh</button>
+
+	</div>
+	<div ng-repeat='vids in videos'>
+		<pic></pic>
+	</div>
+	
+</div>
